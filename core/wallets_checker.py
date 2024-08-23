@@ -4,6 +4,7 @@ from functools import partial
 import logging
 
 from playwright.async_api import async_playwright, Browser, Page, Playwright, Response
+from playwright._impl._errors import TimeoutError
 
 from core.balance import Balance
 from core.utils import save_balances_rows_to_file
